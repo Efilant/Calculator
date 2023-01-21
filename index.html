@@ -1,0 +1,113 @@
+<!doctype html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="lib/style.css">
+    <script src="lib/script.js"></script>
+  </head>
+
+  <body>
+
+<div style="background-color:#dcdcdc; height:180px; width:115px; border:black 2px solid;">
+
+<div style="background-color:#none; width:150 px; position:relative ;left:5px; top:5px; height:px;"><input type="text" style="width:65px;" readonly="readonly" id="d"/>
+
+    <input type="button" style="background-color:#7f7f7f;" 
+    value="C" onclick='c("")'/>
+
+</div>
+
+<div style="position:relative; top:px;left:5px;">
+  
+ <p style="line-height:10px;">
+    <input type="button" style="color:black;background-color:#aaaaaa;
+    border-bottom:black 2px solid;" 
+     value="1" onclick='v("1")'/>
+
+      <input type="button" style="color:black;background-color:#aaaaaa;
+    border-bottom:black 2px solid;"  
+    value="2" onclick='v("2")'/>
+    
+    <input type="button" style="color:black;background-color:#aaaaaa;
+    border-bottom:black 2px solid;" " 
+    value="3" onclick='v("3")'/>
+
+    <input type="button" style="color:black;background-color:d1d1d1;
+    border-bottom:black 2px solid;" 
+    value=" /" onclick='v("/")'/>
+ </p>
+ <p style="line-height:10px;">
+    <input type="button" style="color:black;background-color:#aaaaaa;
+    border-bottom:black 2px solid;" 
+    value="4" onclick='v("4")'/>
+
+    <input type="button" style="color:black;background-color:#aaaaaa;
+    border-bottom:black 2px solid;" 
+    value="5" onclick='v("5")'/>
+    
+    <input type="button" style="color:black;background-color:#aaaaaa;
+    border-bottom:black 2px solid;"  value="6" onclick='v("6")'/>
+    
+    <input type="button" style="color:black;background-color:d1d1d1;
+    border-bottom:black 2px solid;"  value=" -" 
+    onclick='v("-")'/>
+ </p>
+ <p style="line-height:10px;">
+    <input type="button" style="color:black;background-color:#aaaaaa;
+    border-bottom:black 2px solid;"  value="7" onclick='v("7")'/>
+    
+    <input type="button" style="color:black;background-color:#aaaaaa;
+    border-bottom:black 2px solid;" 
+    value="8" onclick='v("8")'/>
+    
+    <input type="button" style="color:black;background-color:#aaaaaa;
+    border-bottom:black 2px solid;" 
+    value="9" onclick='v("9")'/>
+   
+    <input type="button" style="color:black;background-color:d1d1d1;
+    border-bottom:black 2px solid;"  value="+" 
+    onclick='v("+")'/>
+    </p>
+    <p style="line-height:10px;">
+    <input type="button" 
+   style="color:black;background-color:d1d1d1;
+    border-bottom:black 2px solid;"  value=" ." onclick='v(".")'/>
+    
+    <input type="button" style="color:black;background-color:#aaaaaa;
+    border-bottom:black 2px solid;" 
+    value="0" onclick='v("0")'/>
+    
+    <input type="button" 
+    style="color:black;background-color:d1d1d1;
+    border-bottom:black 2px solid;"  value="=" onclick='e()'/>
+    
+    <input type="button" 
+    style="color:black;background-color:d1d1d1;
+    border-bottom:black 2px solid;" " value=" *" onclick='v("*")'/>
+    </p>
+</div>
+</div>
+
+<script>
+  function c(val)
+{
+document.getElementById("d").value=val;
+}
+function v(val)
+{
+document.getElementById("d").value+=val;
+}
+function e() 
+{ 
+try 
+{ 
+  c(eval(document.getElementById("d").value)) 
+} 
+catch(e) 
+{
+  c('Error') 
+} 
+}  
+</script>
+  </body>
+</html>
